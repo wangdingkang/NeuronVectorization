@@ -10,6 +10,22 @@ public class TreeNode{
 	private double distance;
 	private int index;
 	private double radius;
+	private int siblingIndex;
+
+	public void resetSibling() {
+		siblingIndex = 0;
+	}
+
+	public TreeNode nextChild() {
+		if(siblingIndex < children.size())
+			return children.get(siblingIndex++);
+		return null;
+	}
+
+	public int getSiblingIndex() {
+		return this.siblingIndex;
+	}
+
 	
 	public TreeNode(TreeNode parent, Point3D val){
 		this.parentNode = parent;
@@ -18,6 +34,7 @@ public class TreeNode{
 		this.children = new ArrayList<TreeNode>();
 		this.distance = 0;
 		index = 0;
+		this.siblingIndex = 0;
 	}
 	public TreeNode getParentNode(){
 		return this.parentNode;
