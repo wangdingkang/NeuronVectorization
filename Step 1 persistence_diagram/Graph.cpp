@@ -64,7 +64,7 @@ void Graph::outputWeightedGraph(string filename)
 	ofs.clear();
 }
 
-Graph::Graph(int numV, double delta, int numF) : dist(numV, vector<double>(numV, 987654321)), next(numV, vector<int>(numV, -1))
+Graph::Graph(int numV, double delta, int numF) //: dist(numV, vector<double>(numV, 987654321)), next(numV, vector<int>(numV, -1))
 {
 	this->numV = numV;
 	this->numF = numF;

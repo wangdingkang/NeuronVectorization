@@ -108,8 +108,8 @@ public:
 class Graph
 {
 public:
-	vector< vector<double> > dist;
-	vector< vector<int> > next;
+//	vector< vector<double> > dist;
+//	vector< vector<int> > next;
 private:
 	int numV;
 	int numE;
