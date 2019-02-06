@@ -185,8 +185,13 @@ void calculate(string diagrams_folder, string vector_folder, int vec_len, double
 
 
 int main(int argc, char **argv){
-	string diagrams_folder = "input\\workflow";
-	string vector_folder = "output\\workflow";
+	if(argc != 3){
+		cout << "usage: PDmain <input folder name> <output folder name>" << endl;
+		return 0;
+	}
+	string diagrams_folder(argv[1]);
+	string vector_folder(argv[2]);
+	
 	double sigma = 50;
 	int vec_len = 100;
 	calculate(diagrams_folder, vector_folder, vec_len, sigma);
