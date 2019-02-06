@@ -20,7 +20,7 @@ There are three steps to generate vector summaries of input neurons. To explain 
 
 For both c++ and java code, I used Eclipse IDE, but Clion and Intellj should also work.
 
-In order to run c++ code, c++11 compiler must be installed (newest MINGW compiler should work fine on Windows OS). You will also need to install boost library for compiling persistence diagram code.
+In order to run c++ code, c++11 compiler must be installed (newest MINGW compiler should work fine on Windows OS). 
 
 After compilation, you can run the code step by step using following commands (replace all $variables with your actual value):
 
