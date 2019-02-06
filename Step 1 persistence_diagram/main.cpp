@@ -87,16 +87,12 @@ void getPersistentDiagrams(string filePath, string outputFolder){
 }
 
 int main(int argc, char **argv){
-//	if(argc != 3){
-//		cout << "usage: PDmain <input folder name> <output folder name>" << endl;
-//		return 0;
-//	}
-//	string euclideanWithFuncVal(argv[1]);
-//	string persistenceDiagramFolder(argv[2]);
-
-	string euclideanWithFuncVal("input\\workflow");
-	string persistenceDiagramFolder("output\\workflow");
-
+	if(argc != 3){
+		cout << "usage: PDmain <input folder name> <output folder name>" << endl;
+		return 0;
+	}
+	string euclideanWithFuncVal(argv[1]);
+	string persistenceDiagramFolder(argv[2]);
 
 	if(persistenceDiagramFolder.find_last_of('\\') != persistenceDiagramFolder.size() - 1){
 		persistenceDiagramFolder += '\\';
