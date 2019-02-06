@@ -49,7 +49,10 @@ We have 6 different descriptor functions available, 1 is the default one.
 
 ## Notice
 
-1). ".des" files are outputs of the first step, trees with function values.
-    ".pdg" files are persistence diagrams.
-    ".pvec" files are vectors, also, there are two numbers on the first line representing the range of its persistence diagram.
-    All files can be opened and read by txt editors.
+".des" files are outputs of the first step, trees with function values.
+
+".pdg" files are persistence diagrams.
+
+".pvec" files are vectors, also, there are two numbers on the first line representing the range of its persistence diagram.
+
+All files can be opened and read by txt editors.
