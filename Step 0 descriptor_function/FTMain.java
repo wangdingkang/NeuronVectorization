@@ -24,24 +24,24 @@ public class FTMain {
 	}
 
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-//		if(args.length != 3){
-//			System.out.println("usage: file_transfer <original swc file folder> <output file folder> <file transfer function type>");
-//			System.out.println("<file transfer function type> is a number:");
-//			System.out.println("0: Geodesic distance along neuron tree edges from tree nodes to root"); //geodesic distance
-//			System.out.println("1: Euclidean distance along neuron tree edges from tree nodes to root"); //Geodesic+straight line
-//			System.out.println("2: Weighted Geodesic distance along neuron tree edges from tree nodes to root"); //Volume weighted
-//			System.out.println("3: Euclidean distance from tree nodes to root"); //  Euclidean distance function
-//			System.out.println("4: Density count at each tree node from root to farthest tree node to root");
-//			System.out.println("5: Use y-coordinate as descriptor function");
-//			System.exit(0);
-//		}
-//		String inputFolder = args[0];
-//		String outputFolder = args[1];
-//		int controller = Integer.valueOf(args[2]);
+		if(args.length != 3){
+			System.out.println("usage: file_transfer <original swc file folder> <output file folder> <file transfer function type>");
+			System.out.println("<file transfer function type> is a number:");
+			System.out.println("0: Geodesic distance along neuron tree edges from tree nodes to root"); //geodesic distance
+			System.out.println("1: Euclidean distance along neuron tree edges from tree nodes to root"); //Geodesic+straight line
+			System.out.println("2: Weighted Geodesic distance along neuron tree edges from tree nodes to root"); //Volume weighted
+			System.out.println("3: Euclidean distance from tree nodes to root"); //  Euclidean distance function
+			System.out.println("4: Density count at each tree node from root to farthest tree node to root");
+			System.out.println("5: Use y-coordinate as descriptor function");
+			System.exit(0);
+		}
+		String inputFolder = args[0];
+		String outputFolder = args[1];
+		int controller = Integer.valueOf(args[2]);
 
-		String inputFolder = "Input/workflow/";
-		String outputFolder = "Output/workflow/";
-		int controller = 1;
+//		String inputFolder = "Input/workflow/";
+//		String outputFolder = "Output/workflow/";
+//		int controller = 1;
 		
 		if(!checkParameter(inputFolder, outputFolder, controller)){
 			System.out.println("error with argument");
