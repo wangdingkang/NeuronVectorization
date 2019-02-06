@@ -20,13 +20,36 @@ There are three steps to generate vector summaries of input neurons. To explain 
 
 For both c++ and java code, I used Eclipse IDE, but Clion and Intellj should also work.
 
-In order to run c++ code, c++ must be supported by your compile (newest MINGW compiler should work fine on Windows OS). You will also need to install boost library.
+In order to run c++ code, c++11 compiler must be installed (newest MINGW compiler should work fine on Windows OS). You will also need to install boost library for compiling persistence diagram code.
+
+After compilation, you can run the code step by step using following commands (replace all $variables with your actual value):
+
+### Calculate descriptor function values
+"java FTMain $input_folder_path $output_folder_path $descriptor_function"
+
+We have 6 different descriptor functions available, 1 is the default one.
+
+0: Geodesic distance along neuron tree edges from tree nodes to root
+
+1: Euclidean distance along neuron tree edges from tree nodes to root
+
+2: Weighted Geodesic distance along neuron tree edges from tree nodes to root
+
+3: Euclidean distance from tree nodes to root
+
+4: Density count at each tree node from root to farthest tree node to root
+
+5: Use y-coordinate as descriptor function
+
+### Generate persistence diagram
+"main $input_folder_path $output_folder_path"
+
+### Vectorize persistence diagram
+"vectorization $input_folder_path $output_folder_path"
 
 ## Notice
 
-1). You may need to reset the paths of input folder and output folder in each main file.
-
-2). ".des" files are outputs of the first step, trees with function values.
+1). ".des" files are outputs of the first step, trees with function values.
     ".pdg" files are persistence diagrams.
     ".pvec" files are vectors, also, there are two numbers on the first line representing the range of its persistence diagram.
     All files can be opened and read by txt editors.
