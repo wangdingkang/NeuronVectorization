@@ -1,5 +1,6 @@
 # NeuronVectorization
 Neuron vectorization tool using persistence diagrams. Modified from the original version (https://github.com/Nevermore520/NeuronTools).
+More details can be found in the paper (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182184).
 
 ## Test Samples
 
